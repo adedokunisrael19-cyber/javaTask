@@ -1,0 +1,15 @@
+
+import java.util.Scanner;
+public class NumbersDivider{
+	public static void main(String[] args){
+
+	Scanner input = new Scanner(System.in);
+	System.out.println("guess a Number");
+	int m = input.nextInt();
+	int n = input.nextInt();
+
+	int w = m/n;
+if (n==0) System.out.println("Cannot perform arithmetic");
+else System.out.printf("the answer is %s", w);
+	}
+}
