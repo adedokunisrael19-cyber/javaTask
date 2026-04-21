@@ -1,17 +1,14 @@
 import java.util.Scanner;
 
 public class countdown{
-public static void main (String[] args){
-    int sum =0;
-    int division=0;
-    Scanner UserInput = new Scanner(System.in);
-   System.out.println("Enter a number:");
-     int number = UserInput.nextInt();
-for(; number>0;){
-     division = number % 10;
-        number = number /10;
-       System.out.print(division);
-}
+    public static void main (String[] args){
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int number = userInput.nextInt();
+        for(int input = number; number>=1; number--){
+            System.out.print(input);
+
+        }System.out.print("Blast off");
  
-}
+    }
 }
