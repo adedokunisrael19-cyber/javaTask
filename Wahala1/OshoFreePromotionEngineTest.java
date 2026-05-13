@@ -34,6 +34,8 @@ public class OshoFreePromotionEngineTest{
     public void TestInvalid amount(){
     double number = -100;
     String code = "BIGBOY20";
-    double expe
+    double expect = 0.0;
+    double actual =  OshoFreePromotionEngine.promoDiscount(number, code);
+    assertEquals(actual, expected);
     }
 }

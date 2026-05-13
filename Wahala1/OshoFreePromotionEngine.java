@@ -6,6 +6,8 @@ public class OshoFreePromotionEngine{
     public static double  promoDiscount(double cartTotal, String promoCode){
         
         double discountRate = 0.0;
+        if(cartTotal <0)
+        return 0.0;
         if(cartTotal <5000){
          discountRate = 0.0;
         }else if(cartTotal >= 5000 && cartTotal< 15000 && "STARTER10".equals(promoCode)) {
