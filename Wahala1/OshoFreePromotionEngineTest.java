@@ -22,7 +22,7 @@ public class OshoFreePromotionEngineTest{
     }
 
      @Test
-    public void TestBIGBOY20(){
+    public void TestOSHOFREE35(){
     double number = 38000;
     String code= "OSHOFREE35";
     double expected = 24700;
@@ -31,10 +31,10 @@ public class OshoFreePromotionEngineTest{
     }
 
     @Test
-    public void TestInvalid amount(){
+    public void TestInvalidamount(){
     double number = -100;
     String code = "BIGBOY20";
-    double expect = 0.0;
+    double expected = 0.0;
     double actual =  OshoFreePromotionEngine.promoDiscount(number, code);
     assertEquals(actual, expected);
     }
