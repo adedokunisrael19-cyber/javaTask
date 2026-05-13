@@ -4,17 +4,17 @@ import java.util.Scanner;
 public class PizzaWahala{
     public static void main(String[] args){
     Scanner input = new Scanner(System.in);
-    System.out.println(" what is the number of participants you made per day: ");
+    System.out.println(" what is the number of participants for the event: ");
     int participants = input.nextInt();
    
 
-    String boxtype = PizzaWahalas(participants);
+    String boxtype = PizzaWahala(participants);
     System.out.print(boxtype);
     
    
     }
 
-public static String PizzaWahalas(int participants ){ 
+public static String PizzaBox(int participants ){ 
    String boxtype = " ";
     
   

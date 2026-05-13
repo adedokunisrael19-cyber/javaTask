@@ -5,6 +5,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BackToSenderTest{
 
+     @Test
+	public void TestBetween60and69(){
+		//Given
+		
+		//When
+		int expectedPay = BackToSender.PayPerParcel(65);
+
+		//check
+		int actualPay = 21250;
+		assertEquals(actualPay, expectedPay);
+	    }
+
 	@Test
 	public void TestLessThan50(){
 		//Given
@@ -31,17 +43,7 @@ public class BackToSenderTest{
 	}
 
 
-    @Test
-	public void TestBetween60and69(){
-		//Given
-		
-		//When
-		int expectedPay = BackToSender.PayPerParcel(65);
-
-		//check
-		int actualPay = 21250;
-		assertEquals(actualPay, expectedPay);
-	    }
+   
     @Test
 	    public void TestBetween70andabove(){
 		    //Given
